@@ -183,7 +183,8 @@ rebuild_testapi:
 # but adding the dependances generate mess
 testapi.c: $(srcdir)/gentest.py
 	-@(if [ "$(PYTHON)" != "" ] ; then \
-	    $(PYTHON) $(srcdir)/gentest.py $(srcdir) ; fi )
+	    $(PYTHON) $(srcdir)/gentest.py $(srcdir) ; fi ; \
+	    if [ ! -e testapi.c ];then echo "int main() {}" > testapi.c; fi)
 
 BUILT_SOURCES = testapi.c
 
