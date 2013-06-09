@@ -90,12 +90,12 @@ noinst_PROGRAMS = testSchemas$(EXEEXT) testRelax$(EXEEXT) \
 	runxmlconf$(EXEEXT) testrecurse$(EXEEXT) testlimits$(EXEEXT)
 bin_PROGRAMS = xmllint$(EXEEXT) xmlcatalog$(EXEEXT)
 subdir = .
-DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
+DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog COPYING \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) \
 	$(srcdir)/config.h.in $(srcdir)/libxml.spec.in \
 	$(srcdir)/xml2-config.in $(srcdir)/libxml-2.0.pc.in \
-	$(srcdir)/libxml-2.0-uninstalled.pc.in depcomp COPYING TODO \
+	$(srcdir)/libxml-2.0-uninstalled.pc.in depcomp TODO \
 	config.guess config.sub install-sh missing ltmain.sh
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
